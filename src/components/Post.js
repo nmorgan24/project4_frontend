@@ -5,19 +5,16 @@ function Post ({post}){
 
     const div = {
         textAlign: 'center',
-        border: `2px solid white`,
+        border: `3px solid`,
         margin: "10px auto",
-        width: "60%"
+        width: "80%"
     }
 
 
     return <div style={div}>
         <Link to={`/post/${post.id}`}>
-            <h1>{post.date}</h1>
-            <h2>{post.name}</h2>
-            <h2>{post.data}</h2>
-            <h2>{post.phone_number}</h2>
-            <h2>{post.vin}</h2>
+            <h1>{post.subject}</h1>
+            <h2>{post.details}</h2>
         </Link>
     </div>
 }

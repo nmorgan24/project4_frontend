@@ -15,7 +15,7 @@ function Show(props) {
       <h1>{post.subject}</h1>
       <h2>{post.details}</h2>
       <div style={{ textAlign: "center" }}>
-        <h2>Update Todo</h2>
+        <h2>Update Caller's Info</h2>
         <Form method="post" action={`/update/${post.id}`}>
           <input
             type="text"
@@ -29,13 +29,13 @@ function Show(props) {
             placeholder="Details"
             defaultValue={post.details}
           />
-          <button>Update Todo</button>
+          <button>Update Caller's Info</button>
         </Form>
         <Form method="post" action={`/delete/${post.id}`}>
-            <button>Delete Todo</button>
+            <button>Delete Caller's Info</button>
         </Form>
       </div>
-      <Link to="/">Back to Index</Link>
+      <Link to="/">Back</Link>
     </div>
   );
 }

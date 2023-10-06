@@ -1,5 +1,6 @@
 import Post from '../components/Post';
 import {useLoaderData, Form} from 'react-router-dom';
+import "../styles.scss";
 
 function Index (props){
 
@@ -9,11 +10,11 @@ function Index (props){
     // map over the todos and create a Post component for each todo
     return <>
     <div style={{textAlign: "center"}}>
-        <h2>Create a Todo</h2>
+        <h2>Return Missed Calls</h2>
         <Form method="post" action="/create">
-            <input type="text" name="subject" placeholder="Subject"/>
-            <input type="text" name="details" placeholder="Details"/>
-            <button>Create a new Todo</button>
+            <input type="text" name="Name" placeholder="Caller's Name"/>
+            <input type="text" name="Number" placeholder="Phone Number"/>
+            <button>Create a New Missed Call</button>
         </Form>
     </div>
     {todos.map((todo) => <Post key={todo.id} post={todo}/>)}

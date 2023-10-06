@@ -1,3 +1,5 @@
+import url from "./url";
+import { redirect } from "react-router-dom";
 // Create Action for Creating Todos
 export const createAction = async({request}) => {
     // parse out the form data
@@ -5,8 +7,8 @@ export const createAction = async({request}) => {
 
     // construct the body for our api call
     const newTodo = {
-        subject: formData.get("subject"),
-        details: formData.get("details")
+        subject: formData.get("Name"),
+        details: formData.get("Number")
     }
 
     // make a request to create a todo
@@ -45,6 +47,7 @@ export const updateAction = async({request, params}) => {
 
     // redirect to the show page
     return redirect(`/post/${id}`)
+
 }
 
 // Delete Action for Deleting Todos
