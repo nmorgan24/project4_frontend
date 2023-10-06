@@ -16,7 +16,7 @@ function Index (props){
             <input type="text" name="name" placeholder="Name"/>
             <input type="text" name="date" placeholder="Pick-up Date"/>
             <input type="text" name="phone_number" placeholder="Phone Number"/>
-            <input type="text" name="Vin" placeholder="Vin Number"/>
+            <input type="text" name="vin" placeholder="Vin Number"/>
             <button>Schedule New Oil Change</button>
         </Form>
     </div>
